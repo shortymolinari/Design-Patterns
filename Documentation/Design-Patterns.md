@@ -6,10 +6,7 @@
 
 
 
-Los patrones de diseño son soluciones a problemas recurrentes; Directrices sobre cómo abordar ciertos problemas. No son clases, paquetes o bibliotecas que puedes conectar a tu aplicación y esperar a que suceda la magia. Estas son, más bien, pautas sobre cómo abordar ciertos problemas en ciertas situaciones.
-
-Los patrones de diseño son soluciones a problemas recurrentes; Pautas sobre cómo abordar ciertos problemas.
-
+Los patrones de diseño son soluciones a problemas recurrentes; Directrices sobre cómo abordar ciertos problemas. No son clases, paquetes o bibliotecas que puedes conectar a tu aplicación y esperar a que funcionen mágicamente. Estas son, más bien, pautas sobre cómo abordar ciertos problemas en ciertas situaciones.
 
 **Se debe tener en cuenta**
 
