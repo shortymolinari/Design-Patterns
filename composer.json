@@ -1,0 +1,21 @@
+{
+    "name": "shorty-molinari/design-patterns",
+    "description": "Learning and implement design patterns",
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DesignPatterns\\": "design-patterns/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Edwin Arley Rincón Henao",
+            "email": "shortymolinari@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
