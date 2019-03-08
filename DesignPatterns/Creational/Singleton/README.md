@@ -4,11 +4,11 @@
 ***THIS IS CONSIDERED TO BE AN ANTI-PATTERN! FOR BETTER TESTABILITY AND MAINTAINABILITY USE DEPENDENCY INJECTION!***
 
 ---
-####\#Propósito
+#### \#Propósito
 - Para tener solo una instancia de este objeto en la aplicación que manejará todas las llamadas.
 - Asegúrese de que una clase tenga solo una instancia y proporcione un punto de acceso global a ella
 
-####\#Ejemplos
+#### \#Ejemplos
 - Conector DB
 - Registrador (también puede ser un Multiton si hay muchos archivos de registro para varios propósitos)
 - Bloquear archivo para la aplicación (solo hay uno en el sistema de archivos ...)

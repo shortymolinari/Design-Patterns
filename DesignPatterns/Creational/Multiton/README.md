@@ -4,10 +4,10 @@
 ***THIS IS CONSIDERED TO BE AN ANTI-PATTERN! FOR BETTER TESTABILITY AND MAINTAINABILITY USE DEPENDENCY INJECTION!***
 
 ---
-####\#Propósito
+#### \#Propósito
 - Para tener solo una lista de las instancias con nombre que se utilizan, como un singleton pero con ***n*** instancias.
 
-####\#Ejemplos
+#### \#Ejemplos
 - 2 conectores DB, por ejemplo, Una para MySQL, la otra para SQLite.
 - Múltiples registradores (uno para mensajes de depuración, uno para errores).
 
