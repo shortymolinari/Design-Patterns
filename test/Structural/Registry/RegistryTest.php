@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Structural\Registry\Tests;
+namespace Test\Structural\Registry;
 
 use DesignPatterns\Structural\Registry\Registry;
 use stdClass;
@@ -8,7 +8,12 @@ use PHPUnit\Framework\TestCase;
 
 class RegistryTest extends TestCase
 {
-    public function testSetAndGetLogger()
+
+    /**
+     * @group Registry
+     * @test
+     */
+    public function set_and_get_logger()
     {
         $key = Registry::LOGGER;
         $logger = new stdClass();
