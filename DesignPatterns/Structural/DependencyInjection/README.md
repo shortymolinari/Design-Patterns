@@ -23,3 +23,6 @@ La forma habitual de implementar este patrón es mediante un **"Contenedor DI"**
 - En una propiedad de la clase
 
 
+![Dependency Injection](https://designpatternsphp.readthedocs.io/es/latest/_images/uml29.png)
+
+
