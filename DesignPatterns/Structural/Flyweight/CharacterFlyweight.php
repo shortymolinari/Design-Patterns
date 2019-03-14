@@ -2,6 +2,8 @@
 
 namespace DesignPatterns\Structural\Flyweight;
 
+//require "../../../vendor/autoload.php";
+
 use DesignPatterns\Structural\Flyweight\FlyweightInterface;
 
 /**

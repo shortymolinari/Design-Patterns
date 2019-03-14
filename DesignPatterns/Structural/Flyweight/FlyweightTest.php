@@ -2,9 +2,9 @@
 
 namespace DesignPatterns\Structural\Flyweight;
 
+//require "../../../vendor/autoload.php";
 
 use DesignPatterns\Structural\Flyweight\FlyweightFactory;
-require '../../../vendor/autoload.php';
 
 class FlyweightTest
 {
@@ -14,14 +14,14 @@ class FlyweightTest
 
     public function testFlyweight()
     {
-        $factory = new FlyweightFactory();
+        $factory = new \FlyweightFactory();
 
         foreach ($this->characters as $char) {
             foreach ($this->fonts as $font) {
                 $flyweight = $factory->get($char);
                 $rendered = $flyweight->render($font);
 
-                sprintf('Character %s with font %s', $char, $font);
+                echo sprintf('Character %s with font %s', $char, $font);
             }
         }
 
@@ -33,4 +33,4 @@ class FlyweightTest
 }
 
 $flyweightTest = new FlyweightTest;
-echo $flyweightTest->testFlyweight();
+$flyweightTest->testFlyweight();
