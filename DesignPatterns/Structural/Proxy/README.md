@@ -21,11 +21,9 @@ Un **proxy protector** controla el acceso a un objeto maestro sensible. El objet
 
 Un **proxy inteligente** interpone acciones adicionales cuando se accede a un objeto. Los usos típicos incluyen:
 
-    Contando el número de referencias al objeto real para que pueda liberarse automáticamente cuando no haya más referencias (también conocido como puntero inteligente),
-
-    Cargando un objeto persistente en la memoria cuando se hace referencia por primera vez,
-
-    Verificar que el objeto real esté bloqueado antes de acceder a él para garantizar que ningún otro objeto pueda cambiarlo.
++ Contando el número de referencias al objeto real para que pueda liberarse automáticamente cuando no haya más referencias (también conocido como puntero inteligente),
++ Cargando un objeto persistente en la memoria cuando se hace referencia por primera vez,
++ Verificar que el objeto real esté bloqueado antes de acceder a él para garantizar que ningún otro objeto pueda cambiarlo.
 
 
 ![Proxy](https://designpatternsphp.readthedocs.io/en/latest/_images/uml33.png)
