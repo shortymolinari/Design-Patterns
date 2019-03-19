@@ -28,7 +28,7 @@ class FlyweightTest
         // Flyweight pattern ensures that instances are shared
         // instead of having hundreds of thousands of individual objects
         // there must be one instance for every char that has been reused for displaying in different fonts
-        //$this->assertCount(count($this->characters), $factory);
+        $this->assertCount(count($this->characters), $factory);
     }
 }
 
