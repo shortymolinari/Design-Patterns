@@ -3,7 +3,7 @@
 namespace DesignPatterns\Creational\Pool;
 
 class WorkerPool implements \Countable {
-    
+
     /**
      * @var StringReverseWorker[]
      */
@@ -18,6 +18,7 @@ class WorkerPool implements \Countable {
     {
         if (count($this->freeWorkers) == 0) {
             $worker = new StringReverseWorker();
+            //echo 'cree una nueva instancia de StringReverseWorker' . PHP_EOL;
         } else {
             $worker = array_pop($this->freeWorkers);
         }
@@ -41,4 +42,8 @@ class WorkerPool implements \Countable {
     {
         return count($this->occupiedWorkers) + count($this->freeWorkers);
     }
+
+   /* public function __debugInfo() {
+        var_dump($this->occupiedWorkers);
+    }*/
 }
