@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Structural\Flyweight;
 
-//require "../../../vendor/autoload.php";
+require "../../../vendor/autoload.php";
 
 use DesignPatterns\Structural\Flyweight\FlyweightInterface;
 
@@ -30,6 +30,6 @@ class CharacterFlyweight implements FlyweightInterface
          // Clients supply the context-dependent information that the flyweight needs to draw itself
          // For flyweights representing characters, extrinsic state usually contains e.g. the font.
 
-        return sprintf('Character %s with font %s', $this->name, $font);
+        return sprintf('Character %s with font %s', $this->name, $font) . PHP_EOL;
     }
 }
