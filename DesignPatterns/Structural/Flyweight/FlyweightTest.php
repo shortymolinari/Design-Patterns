@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Structural\Flyweight;
 
-//require "../../../vendor/autoload.php";
+require "../../../vendor/autoload.php";
 
 use DesignPatterns\Structural\Flyweight\FlyweightFactory;
 
@@ -21,7 +21,7 @@ class FlyweightTest
                 $flyweight = $factory->get($char);
                 $rendered = $flyweight->render($font);
 
-                //echo sprintf('Character %s with font %s', $char, $font) . PHP_EOL;
+                echo sprintf('Character %s with font %s', $char, $font) . PHP_EOL;
             }
         }
 
@@ -30,8 +30,8 @@ class FlyweightTest
         // there must be one instance for every char that has been reused for displaying in different fonts
        // $this->assertCount(count($this->characters), $factory);
 
-        //echo "Factory: " . count($factory) . PHP_EOL;
-        //echo "Characters: " . count($this->characters);
+        echo "Factory: " . count($factory) . PHP_EOL;
+        echo "Characters: " . count($this->characters);
     }
 }
 
