@@ -1,14 +1,10 @@
-### \#Design Patters (32) | Patrones de diseño
+## \# Patrones de diseño | Design Patters (32)
+
+> #### Introducción
+>Los patrones de diseño son soluciones a problemas recurrentes; Directrices sobre cómo abordar ciertos problemas. No son clases, paquetes, bibliotecas o un diseño terminado que se puede transformar directamente en código. Es una descripción o plantilla sobre cómo resolver un problema que se puede utilizar en muchas situaciones diferentes.
 ---
 
-#### \#Introducción
----
-
-Los patrones de diseño son soluciones a problemas recurrentes; Directrices sobre cómo abordar ciertos problemas. No son clases, paquetes o bibliotecas que puedes integrar en tu aplicación y esperar a que funcionen mágicamente. Estas son, más bien, pautas sobre cómo abordar ciertos problemas en ciertas situaciones.
-
----
-
-### \#Types of Design Patterns (3) | Tipos de patrones de diseño
+### \# Tipos de patrones de diseño | Types of Design Patterns (3)
 ---
 
 - Creational (Creacional 9)
@@ -16,14 +12,12 @@ Los patrones de diseño son soluciones a problemas recurrentes; Directrices sobr
 - Behavioral (De comportamiento 12)
 
 
-#### \#Creational Design Patterns (9)
----
-- Los patrones de diseño creacional tratan con los mecanismos de **creación de objetos**,
- tratando de crear objetos de una manera adecuada a la situación. La forma básica de creación de objetos podría provocar
-  problemas de diseño o una mayor complejidad al diseño. Los patrones de diseño creacional resuelven este problema
-   controlando de alguna manera la creación de este objeto.
-   
-- Creational patterns are focused towards how to instantiate an object or group of related objects.
+### \# Patrones de diseño creacional | Creational Design Patterns (9)
+
+>Los patrones de diseño creacional tratan con los mecanismos para crear una instancia de un objeto o grupo de objetos relacionados, procurando crear objetos de una manera adecuada a la situación. 
+
+>La forma básica de creación de objetos podría provocar problemas de diseño o una mayor complejidad al diseño. Lo patrones de diseño creacional resuelven este problema controlando de alguna manera la creación de este objeto.
+
 
 ---
 
@@ -38,7 +32,12 @@ Los patrones de diseño son soluciones a problemas recurrentes; Directrices sobr
 - Static Factory
 
 
-#### \#Structural Design Patterns (11)
+### \#Patrones de diseño estructural | Structural Design Patterns (11)
+
+> Los patrones estructurales se ocupan principalmente de la composición del objeto o, en otras palabras, de cómo las entidades se pueden utilizar entre sí, facilitando el diseño al identificar una forma sencilla de establecer relaciones entre entidades.
+
+---
+
 
 - Adapter / Wrapper
 - Bridge
@@ -52,7 +51,10 @@ Los patrones de diseño son soluciones a problemas recurrentes; Directrices sobr
 - [Proxy](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Proxy "Proxy")
 - [Registry](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Registry "Registry")
 
-#### \#Behavioral Design Patterns (12)
+### \#Patrones de diseño de comportamiento | Behavioral Design Patterns (12)
+
+>Se ocupa de la asignación de responsabilidades entre los objetos. Lo que los diferencia de los patrones estructurales es que no solo especifican la estructura, sino que también describen los patrones para el paso / comunicación de mensajes entre ellos. 
+___
 
 
 - Chain Of Responsibilities
