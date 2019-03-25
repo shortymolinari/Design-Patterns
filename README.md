@@ -24,11 +24,11 @@
 - Abstract Factory
 - Builder
 - Factory Method
-- [Multiton](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Multiton "Multiton")
-- [Pool](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Pool "Pool")
+- [x] [Multiton](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Multiton "Multiton")
+- [x] [Pool](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Pool "Pool")
 - Prototype
 - Simple Factory
-- [Singleton](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Singleton "Singleton")
+- [x] [Singleton](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Singleton "Singleton")
 - Static Factory
 
 
@@ -44,12 +44,12 @@
 - Composite
 - Data Mapper
 - Decorator
-- [Dependency Injection](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DependencyInjection "Dependency Injection")
+- [x] [Dependency Injection](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DependencyInjection "Dependency Injection")
 - Facade
-- [Fluent Interface](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/FluentInterface "Fluent Interface")
-- [Flyweight](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Flyweight "Flyweight")
-- [Proxy](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Proxy "Proxy")
-- [Registry](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Registry "Registry")
+- [x] [Fluent Interface](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/FluentInterface "Fluent Interface")
+- [x] [Flyweight](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Flyweight "Flyweight")
+- [x] [Proxy](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Proxy "Proxy")
+- [x] [Registry](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Registry "Registry")
 
 ### \#Patrones de diseño de comportamiento | Behavioral Design Patterns (12)
 
