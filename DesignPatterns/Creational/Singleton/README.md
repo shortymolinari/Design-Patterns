@@ -15,11 +15,11 @@
 
 #### \#Check list
 
-- [x] Define a private static attribute in the "single instance" class.
-- [x] Define a public static accessor function in the class.
-- [x] Do "lazy initialization" (creation on first use) in the accessor function.
-- [x] Define all constructors to be protected or private.
-- [x] Clients may only use the accessor function to manipulate the Singleton.
+- [x] Defina un atributo estático privado en la clase "single instance".
+- [x] Defina una función de acceso estática pública en la clase.
+- [x] Realice la "lazy initialization" (creation on first use) en la función de acceso.
+- [x] Defina todos los constructores para ser protegidos o privados.
+- [x] Los clientes solo pueden usar la función de acceso para manipular el Singleton.
 
 ![GitHub Logo](https://designpatternsphp.readthedocs.io/en/latest/_images/uml19.png)
 

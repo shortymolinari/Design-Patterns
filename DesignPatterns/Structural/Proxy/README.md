@@ -25,5 +25,13 @@ Un **proxy inteligente** interpone acciones adicionales cuando se accede a un ob
 + Cargando un objeto persistente en la memoria cuando se hace referencia por primera vez,
 + Verificar que el objeto real esté bloqueado antes de acceder a él para garantizar que ningún otro objeto pueda cambiarlo.
 
+#### \#Check list
+
+- [x] Usar una clase abstracta
+- [x] Crear un array estático privado para almacenar las clases y su respectiva instancia.
+- [x] Crear un array estático privado para restringir el uso de instancias.
+- [x] Crear un método estático para defienir las inatancias a usar.
+- [x] Crear un método estático acceder a las instancias creadas.
+
 
 ![Proxy](https://designpatternsphp.readthedocs.io/en/latest/_images/uml33.png)
