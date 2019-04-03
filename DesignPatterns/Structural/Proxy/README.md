@@ -27,11 +27,9 @@ Un **proxy inteligente** interpone acciones adicionales cuando se accede a un ob
 
 #### \#Check list
 
-- [x] Usar una clase abstracta
-- [x] Crear un array estático privado para almacenar las clases y su respectiva instancia.
-- [x] Crear un array estático privado para restringir el uso de instancias.
-- [x] Crear un método estático para defienir las inatancias a usar.
-- [x] Crear un método estático acceder a las instancias creadas.
+- [x] Identificar que tipo de proxy se necesita (contenedor o sustituto)
+- [x] Crear una interfaz que permita que los objectos sean intercambiables (sutituir)
+- [x] Recibir un objeto como parametro este objeto debe implementar una interface
 
 
 ![Proxy](https://designpatternsphp.readthedocs.io/en/latest/_images/uml33.png)

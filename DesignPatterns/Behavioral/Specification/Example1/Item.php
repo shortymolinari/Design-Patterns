@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Behavioral\Specification\Example1;
 
-class Item
+class Item 
 {
     /**
      * @var float

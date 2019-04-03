@@ -8,5 +8,11 @@ La agrupación de objetos puede ofrecer un aumento significativo del rendimiento
 
 Sin embargo, estos beneficios son en su mayoría verdaderos para los objetos que son caros con respecto al tiempo, como las conexiones de bases de datos, conexiones de socket, hilos y objetos gráficos grandes como fuentes o mapas de bits. En ciertas situaciones, la agrupación de objetos simple (que no contiene recursos externos, pero solo ocupa la memoria) puede no ser eficiente y puede disminuir el rendimiento.
 
+#### \#Check list
+
+- [x] Crear una interface
+- [x] Crear una objeto real a través de la interface que implemente la funcionalidad que se espera
+- [x] Crear un objeto nulo que pueda sustituirse por uno real a través de la interface, este onjeto no hace nada.
+
 #### Diagrama
 ![Null Object ](https://designpatternsphp.readthedocs.io/en/latest/_images/uml5.png)
