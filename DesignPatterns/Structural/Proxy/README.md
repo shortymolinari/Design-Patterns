@@ -28,8 +28,9 @@ Un **proxy inteligente** interpone acciones adicionales cuando se accede a un ob
 #### \#Check list
 
 - [x] Identificar que tipo de proxy se necesita (contenedor o sustituto)
-- [x] Crear una interfaz que permita que los objectos sean intercambiables (sutituir)
-- [x] Recibir un objeto como parametro este objeto debe implementar una interface
+- [x] Crear una interfaz que permita que los objetos sean intercambiables (sustituir)
+- [x] Recibir un objeto como parámetro este objeto debe implementar la interface (objeto proxy)
+- [x] Especificar la implementación, ya sea validar el acceso a ciertos métodos o funcionalidad extra.
 
 
 ![Proxy](https://designpatternsphp.readthedocs.io/en/latest/_images/uml33.png)
