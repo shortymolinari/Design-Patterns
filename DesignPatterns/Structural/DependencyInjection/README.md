@@ -22,6 +22,10 @@ La forma habitual de implementar este patrón es mediante un **"Contenedor DI"**
 - Métodos (por lo genarl setters)
 - En una propiedad de la clase
 
+#### \#Check list
+
+- [x] Crear una clase cuyas propiedades y metodos sean una representación textual de su funcionamiento facilitando su lectura.
+
 
 ![Dependency Injection](https://designpatternsphp.readthedocs.io/es/latest/_images/uml29.png)
 

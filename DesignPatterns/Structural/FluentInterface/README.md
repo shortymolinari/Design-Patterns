@@ -32,10 +32,10 @@ $programmer->die();
 
 #### \#Check list
 
-- [x] Identificar que tipo de proxy se necesita (contenedor o sustituto)
-- [x] Crear una interfaz que permita que los objetos sean intercambiables (sustituir)
-- [x] Recibir un objeto como parámetro este objeto debe implementar la interface (objeto proxy)
-- [x] Especificar la implementación, ya sea validar el acceso a ciertos métodos o funcionalidad extra.
+- [x] Crear una clase cuyas propiedades y metodos sean una representación textual de su funcionamiento facilitando su lectura.
+- [x] Usar el encadenamiento de métodos para permitir una implementación fluida y textual (expresiva).
+- [x] Retornar una cadena con la representación textual de la funcionalidad requerida
+
 
 ![Fluent Interface](https://designpatternsphp.readthedocs.io/en/latest/_images/uml31.png)
 

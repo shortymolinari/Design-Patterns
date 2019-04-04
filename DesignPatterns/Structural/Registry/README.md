@@ -14,6 +14,6 @@
 - [x] Crear un array estático privado para almacenar las clases y su respectiva instancia.
 - [x] Crear un array estático privado para restringir el uso de instancias.
 - [x] Crear un método estático para defienir las inatancias a usar.
-- [x] Crear un método estático acceder a las instancias creadas.
+- [x] Crear un método estático para acceder a las instancias creadas.
 
 ![Registry](https://designpatternsphp.readthedocs.io/en/latest/_images/uml34.png)

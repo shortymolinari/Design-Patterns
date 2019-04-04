@@ -11,8 +11,8 @@ Sin embargo, estos beneficios son en su mayoría verdaderos para los objetos que
 #### \#Check list
 
 - [x] Crear una interface
-- [x] Crear una objeto real a través de la interface que implemente la funcionalidad que se espera
-- [x] Crear un objeto nulo que pueda sustituirse por uno real a través de la interface, este onjeto no hace nada.
+- [x] Crear un objeto real que implementa la interface y el comportamiento o la funcionalidad que se espera.
+- [x] Crear un objeto nulo que implementa la interface y que pueda sustituirse por el objeto real , "este objeto nulo no hace nada".
 
 #### Diagrama
 ![Null Object ](https://designpatternsphp.readthedocs.io/en/latest/_images/uml5.png)
