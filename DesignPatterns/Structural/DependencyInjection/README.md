@@ -24,7 +24,9 @@ La forma habitual de implementar este patrón es mediante un **"Contenedor DI"**
 
 #### \#Check list
 
-- [x] Crear una clase cuyas propiedades y metodos sean una representación textual de su funcionamiento facilitando su lectura.
+- [x] Crear una clase que se encargue de suplir las necesidades de otra (dependiente), esta clase puede o no implementar a su vez una interface dependiendo de la situación
+- [x] Crear una clase que recibe como parámetro uno o varios objetos que tienen su propia implementación y le dan a esta  lo que pueda necesitar para funcionar sin necesidad de acoplar el funcionamiento de ambas.
+
 
 
 ![Dependency Injection](https://designpatternsphp.readthedocs.io/es/latest/_images/uml29.png)
