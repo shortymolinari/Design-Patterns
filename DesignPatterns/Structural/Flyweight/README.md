@@ -19,12 +19,13 @@ Una práctica común es mantener el estado en estructuras de datos externas y pa
 
 #### [x] Check List
 
-- [x] Asegúrese de que la sobrecarga de objetos sea un problema que requiera atención y que el cliente de la clase pueda y esté dispuesto a absorber la reordenación de responsabilidades.
-- [x] Dividir el estado de la clase de destino en: estados compartible (***intrínseca***) y estado no compartido (***extrínseca***).
-- [x] Eliminar el estado no compartible de los atributos de clase, y añádirlo a la lista de argumentos de llamada de los métodos afectados.
-- [x] Cree un **Factory** que pueda almacenar en caché y reutilizar las instancias de clase existentes.
-- [x] El cliente debe utilizar el **Factory** en lugar del operador `new` para solicitar objetos.
-- [x] El cliente (o un tercero) debe buscar o calcular el estado no compartible y proporcionar ese estado a los métodos de clase.
+- [x] Asegúrarse de que la sobrecarga de objetos sea un problema (sobre carga de RAM) que requiera atención.
+- [x] Dividir el estado de la clase Flyweight en: estados compartible (***intrínseca***) y estado no compartido (***extrínseca***).
+- [x] Eliminar el estado no compartible de los atributos de clase, y añádirlo a la lista de argumentos de los métodos.
+- [x] Cree un **Factory** que pueda almacenar en caché y reutilizar las instancias de clase existentes (*Opcionalmente).
+    + Validar si el objeto existe para entregarlo  o crear uno nuevo.
+    + El cliente debe utilizar el **Factory** en lugar del operador `new` para solicitar objetos.
+- [x] El cliente (o un tercero) debe buscar o calcular el estado no compartible y proporcionar ese estado a los métodos de la clase.
 
 #### Diagrama
 ![Flyweight](https://designpatternsphp.readthedocs.io/en/latest/_images/uml32.png)
