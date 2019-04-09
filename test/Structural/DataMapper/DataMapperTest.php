@@ -15,7 +15,7 @@ class DataMapperTest extends TestCase
         $mapper = new UserMapper($storage);
 
         $user = $mapper->findById(1);
-        var_dump($user);
+        //var_dump($user);
         $this->assertInstanceOf(User::class, $user);
     }
 
