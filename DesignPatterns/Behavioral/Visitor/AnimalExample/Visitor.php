@@ -1,99 +1,23 @@
 <?php
 
-interface Animal
-{
-    public function accept(AnimalOperation $operation);
-}
+namespace DesignPatterns\Behavioral\Visitor\AnimalExample;
 
-// Visitor
-interface AnimalOperation
-{
-    public function visitMonkey(Monkey $monkey);
-    public function visitLion(Lion $lion);
-    public function visitDolphin(Dolphin $dolphin);
-}
+require "../../../../vendor/autoload.php";
 
-class Monkey implements Animal
-{
-    public function shout()
-    {
-        echo 'Ooh oo aa aa!';
-    }
+use DesignPatterns\Behavioral\Visitor\AnimalExample\Monkey;
+use DesignPatterns\Behavioral\Visitor\AnimalExample\Lion;
+use DesignPatterns\Behavioral\Visitor\AnimalExample\Dolphin;
+use DesignPatterns\Behavioral\Visitor\AnimalExample\Speak;
+use DesignPatterns\Behavioral\Visitor\AnimalExample\Jump;
 
-    public function accept(AnimalOperation $operation)
-    {
-        $operation->visitMonkey($this);
-    }
-}
-
-class Lion implements Animal
-{
-    public function roar()
-    {
-        echo 'Roaaar!';
-    }
-
-    public function accept(AnimalOperation $operation)
-    {
-        $operation->visitLion($this);
-    }
-}
-
-class Dolphin implements Animal
-{
-    public function speak()
-    {
-        echo 'Tuut tuttu tuutt!';
-    }
-
-    public function accept(AnimalOperation $operation)
-    {
-        $operation->visitDolphin($this);
-    }
-}
-
-class Speak implements AnimalOperation
-{
-    public function visitMonkey(Monkey $monkey)
-    {
-        $monkey->shout();
-    }
-
-    public function visitLion(Lion $lion)
-    {
-        $lion->roar();
-    }
-
-    public function visitDolphin(Dolphin $dolphin)
-    {
-        $dolphin->speak();
-    }
-}
-
-class Jump implements AnimalOperation
-{
-    public function visitMonkey(Monkey $monkey)
-    {
-        echo 'Jumped 20 feet high! on to the tree!';
-    }
-
-    public function visitLion(Lion $lion)
-    {
-        echo 'Jumped 7 feet! Back on the ground!';
-    }
-
-    public function visitDolphin(Dolphin $dolphin)
-    {
-        echo 'Walked on water a little and disappeared';
-    }
-}
 
 $monkey = new Monkey();
 $lion = new Lion();
 $dolphin = new Dolphin();
 
 $speak = new Speak();
+$jump = new Jump();
 
 $monkey->accept($speak);    // Ooh oo aa aa!    
-$lion->accept($speak);      // Roaaar!
-$dolphin->accept($speak);   // Tuut tutt tuutt!
+//$lion->accept($speak);      // Roaaar!
+//$dolphin->accept($speak);   // Tuut tutt tuutt!
