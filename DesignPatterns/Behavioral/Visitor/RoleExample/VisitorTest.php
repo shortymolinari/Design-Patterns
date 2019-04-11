@@ -1,32 +1,31 @@
 <?php
 
-namespace Tests\Behavioral\Visitor;
+namespace DesignPatterns\Tests\Visitor\RoleExample;
+
+require "../../../../vendor/autoload.php";
 
 use DesignPatterns\Behavioral\Visitor\RoleExample\Role;
 use DesignPatterns\Behavioral\Visitor\RoleExample\RoleVisitor;
 use DesignPatterns\Behavioral\Visitor\RoleExample\User;
 use DesignPatterns\Behavioral\Visitor\RoleExample\Group;
 
-use PHPUnit\Framework\TestCase;
-
-class VisitorTest extends TestCase
+class VisitorTest
 {
     /**
      * @var RoleVisitor
      */
     private $visitor;
 
-    public function setUp()
+    public function __construct()
     {
-        parent::setUp();
         $this->visitor = new RoleVisitor();
     }
 
     public function provideRoles()
     {
         return [
-            [new User('Dominik')],
-            [new Group('Administrators')],
+            new User('Dominik'),
+            new Group('Administrators'),
         ];
     }
 
@@ -38,18 +37,13 @@ class VisitorTest extends TestCase
     public function testVisitSomeRole(Role $role)
     {
         $role->accept($this->visitor);
-        $this->assertSame($role, $this->visitor->getVisited()[0]);
-    }
-
-    /**
-     * @dataProvider provideRoles
-     *
-     * @param Role $role
-     */
-    public function testVisitGetSameName(Role $role)
-    {
-        $role->accept($this->visitor);
-        $this->assertSame($role->getName(), $this->visitor->getVisited()[0]->getName());
+       // return $role === $this->visitor->getVisited()[0];
+        var_dump($this->visitor->getVisited()[0]->getName());
     }
 }
+//$role = new \DesignPatterns\Behavioral\Visitor\Role();
+$visitorTest = new VisitorTest();
 
+$role = $visitorTest->provideRoles()[1];
+var_dump($role);
+$visitorTest->testVisitSomeRole($role);

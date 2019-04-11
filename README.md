@@ -62,19 +62,20 @@ ___
 - Iterator
 - Mediator
 - Memento
-- Null Object
+- [x] [Null Object](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/NullObject)
 - Observer
-- Specification
+- [x] [Specification](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Specification)
 - State
 - Strategy
 - Template Method
-- Visitor
+- [x] [Visitor](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Visitor)
 
 ***Fuentes***
 
 - [Design patterns for humans](https://github.com/kamranahmedse/design-patterns-for-humans)
-- [Source making](https://sourcemaking.com/design_patterns/)
 - [Design patterns php](https://designpatternsphp.readthedocs.io/en/latest/README.html)
+- [Source making](https://sourcemaking.com/design_patterns/)
+- [Refactoring guru](https://refactoring.guru/design-patterns)
 
 
 
