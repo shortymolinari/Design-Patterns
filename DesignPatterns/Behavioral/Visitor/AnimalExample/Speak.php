@@ -18,12 +18,12 @@ class Speak implements AnimalOperation
 
     public function visitLion(Lion $lion)
     {
-        $lion->roar();
+        return $lion->roar();
     }
 
     public function visitDolphin(Dolphin $dolphin)
     {
-        $dolphin->speak();
+        return $dolphin->speak();
     }
 
 

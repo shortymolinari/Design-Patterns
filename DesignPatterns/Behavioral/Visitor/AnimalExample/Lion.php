@@ -11,6 +11,6 @@ class Lion implements Animal
 
     public function accept(AnimalOperation $operation)
     {
-        $operation->visitLion($this);
+        return $operation->visitLion($this);
     }
 }

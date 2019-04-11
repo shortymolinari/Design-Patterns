@@ -20,7 +20,7 @@ class MultitonTest extends TestCase
      * @group Multiton
      * @test
      */
-    public function uiqueness()
+    public function uniqueness()
     {
         $this->assertInstanceOf(Multiton::class, $this->firstCall);
         $this->assertSame($this->firstCall, $this->secondCall);

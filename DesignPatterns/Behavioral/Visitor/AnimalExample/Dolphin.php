@@ -11,6 +11,6 @@ class Dolphin implements Animal
 
     public function accept(AnimalOperation $operation)
     {
-        $operation->visitDolphin($this);
+        return $operation->visitDolphin($this);
     }
 }
