@@ -19,5 +19,9 @@ $speak = new Speak();
 $jump = new Jump();
 
 $monkey->accept($speak);    // Ooh oo aa aa!    
-//$lion->accept($speak);      // Roaaar!
-//$dolphin->accept($speak);   // Tuut tutt tuutt!
+$lion->accept($speak);      // Roaaar!
+$dolphin->accept($speak);   // Tuut tutt tuutt!
+
+$monkey->accept($jump);
+$lion->accept($jump);
+$dolphin->accept($jump);

@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Behavioral\Visitor;
+namespace DesignPatterns\Behavioral\Visitor\RoleExample;
 
 /**
  * Note: the visitor must not choose itself which method to
