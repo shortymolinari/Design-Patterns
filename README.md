@@ -42,7 +42,7 @@
 - Adapter / Wrapper
 - Bridge
 - Composite
-- Data Mapper
+- [x] [Data Mapper](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DataMapper)
 - Decorator
 - [x] [Dependency Injection](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DependencyInjection "Dependency Injection")
 - Facade
@@ -58,7 +58,7 @@ ___
 
 
 - Chain Of Responsibilities
-- Command
+- [x] [Command](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/NullObject)
 - Iterator
 - Mediator
 - Memento
