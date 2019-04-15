@@ -14,9 +14,10 @@ Un ejemplo genérico sería pedir comida en un restaurante. Usted (es decir, el 
 
 #### \#Check list
 
-- [x] 
-- [x] 
-- [x] 
+- [x] Crear una interface con el método `execute()` (para ejecutar el comando a través del **Invocador**)
+- [x] Crear una clase o varias que implementan la interface `Command`. Deben inicializar un **Receptor** por medio del constructor, (Command => los comandos)
+- [x] Crear una clase que será el **Invocador** (`invoker`), esta debe recibir un comando que a su vez será ejecutado y desencadenara un acción sobre el **Receptor** (`receiver`).
+- [x] Crear una clase que será el **Receptor** que tiene la lógica el funcionamiento que se quiere implementar el ejecutar el comando
 
 #### Diagrama
 ![Command ](https://designpatternsphp.readthedocs.io/en/latest/_images/uml1.png)
