@@ -1,4 +1,4 @@
-## \# Command
+## \#Command
 >:sparkles: ***Design Patters | Behavioral***
 ---
 ### Propósito
