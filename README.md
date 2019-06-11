@@ -57,7 +57,7 @@
 ___
 
 
-- Chain Of Responsibilities
+- [x] [Chain Of Responsibilities](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Command)
 - [x] [Command](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Command)
 - Iterator
 - Mediator
