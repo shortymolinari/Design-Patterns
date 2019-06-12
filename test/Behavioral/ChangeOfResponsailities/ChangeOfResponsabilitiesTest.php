@@ -34,20 +34,23 @@ class ChangeOfResponsabilitiesTest extends TestCase
         $this->assertNotEquals('Paid 259 using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bank', $this->bank->pay(259));
     }
 
-    public function testPaypalAccountCanPay() { 
-        $this->bank->pay(259);
-        $this->paypal->addMoney(100);
+    public function testPaypalAccountCanPay() {
+
+
         $this->assertEquals(
             'Cannot pay using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bank. Proceeding ..',
-            'Cannot pay using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bank. Proceeding ..'
+            $this->bank->pay(259)
         );
+
+        $this->paypal->addMoney(100);
+
         $this->assertEquals(
             'Paid 259 using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Paypal',
-            'Paid 259 using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Paypal'
+            $this->bank->pay(259)
         );
     }
 
-   public function testBitcoinAccountCanPay() { 
+    public function testBitcoinAccountCanPay() { 
         $this->bank->pay(259);
         $this->assertEquals(
             'Cannot pay using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bank. Proceeding ..',
