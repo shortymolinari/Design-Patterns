@@ -6,6 +6,7 @@ abstract class Account
 {
     protected $successor;
     protected $balance;
+    public $message = [];
 
     public function setNext(Account $account)
     {
@@ -15,16 +16,20 @@ abstract class Account
     public function pay(float $amountToPay)
     {
         if ($this->canPay($amountToPay)) {
-            return  sprintf('Paid %s using %s', $amountToPay, get_called_class());
+            $string = "Paid {$amountToPay} using {$this->getCalledClass()}";
+            array_push($this->message, $string);
+            //echo sprintf('Paid %s using %s', $amountToPay, $this->getCalledClass());
         } elseif ($this->successor) {
-            return  sprintf('Cannot pay using %s. Proceeding ..', get_called_class());
+            $string = "Cannot pay using {$this->getCalledClass()}. Proceeding ..";
+            array_push($this->message, $string);
+           // echo sprintf('Cannot pay using %s. Proceeding ..', $this->getCalledClass());
             $this->successor->pay($amountToPay);
         } else {
             throw new Exception('None of the accounts have enough balance');
         }
     }
 
-    public function canPay($amount): bool
+    public function canPay($amount):bool
     {
         return $this->balance >= $amount;
     }
@@ -35,6 +40,16 @@ abstract class Account
 
     public function subtractMoney(float $money) {
         $this->balance = $this->balance - $money;
+    }
+
+    public function getMessages(){
+        return $this->message;
+    }
+
+    public function getCalledClass() {
+        $called = get_called_class();
+        $string = explode('\\', $called);
+        return end($string);
     }
 
 }

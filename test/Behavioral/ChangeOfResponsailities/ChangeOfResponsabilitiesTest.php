@@ -14,7 +14,7 @@ class ChangeOfResponsabilitiesTest extends TestCase
     protected $paypal;
     protected $bitcoin;
 
-    public function setUp() {
+    public function setUp():void {
 
         parent::setUp();
         $this->bank = new Bank(100);    
@@ -27,30 +27,27 @@ class ChangeOfResponsabilitiesTest extends TestCase
 
     public function testBankAccountCanPay() {   
         $this->bank->addMoney(200);
-        $this->assertEquals('Paid 259 using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bank', $this->bank->pay(259));
+        $this->bank->pay(259);
+        $this->assertEquals(['Paid 259 using Bank'], $this->bank->getMessages());
     }
 
-    public function testBankAccountCannotPay() {   
-        $this->assertNotEquals('Paid 259 using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bank', $this->bank->pay(259));
+    public function testBankAccountCannotPay() {
+        $this->bank->pay(259);
+        $this->assertEquals('Cannot pay using Bank. Proceeding ..', $this->bank->getMessages()[0]);
     }
 
     public function testPaypalAccountCanPay() {
-
-
-        $this->assertEquals(
-            'Cannot pay using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bank. Proceeding ..',
-            $this->bank->pay(259)
-        );
-
+        $this->bank->pay(259);
         $this->paypal->addMoney(100);
-
+        //echo implode(', ', $this->bank->getMessages());
         $this->assertEquals(
-            'Paid 259 using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Paypal',
-            $this->bank->pay(259)
+            ['Cannot pay using Bank. Proceeding ..', 'Paid 259 using Paypal'],
+            $this->bank->getMessages()
         );
+        //$this->assertEquals('Paid 259 using Paypal', $this->bank->getMessages()[1]);
     }
 
-    public function testBitcoinAccountCanPay() { 
+    /*public function testBitcoinAccountCanPay() {
         $this->bank->pay(259);
         $this->assertEquals(
             'Cannot pay using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bank. Proceeding ..',
@@ -64,5 +61,5 @@ class ChangeOfResponsabilitiesTest extends TestCase
             'Paid 259 using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bitcoin',
             'Paid 259 using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bitcoin'
         );
-    }
+    }*/
 }
