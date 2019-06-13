@@ -2,11 +2,13 @@
 
 namespace DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample;
 
+use DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\PaymentMessage as Message;
+
 abstract class Account
 {
     protected $successor;
     protected $balance;
-    public $message = [];
+    protected $message;
 
     public function setNext(Account $account)
     {
@@ -16,13 +18,11 @@ abstract class Account
     public function pay(float $amountToPay)
     {
         if ($this->canPay($amountToPay)) {
-            $string = "Paid {$amountToPay} using {$this->getCalledClass()}";
-            array_push($this->message, $string);
-            //echo sprintf('Paid %s using %s', $amountToPay, $this->getCalledClass());
+            $this->message = sprintf('Paid %s using %s', $amountToPay, $this->getCalledClass());
+            Message::addMessage($this->message);
         } elseif ($this->successor) {
-            $string = "Cannot pay using {$this->getCalledClass()}. Proceeding ..";
-            array_push($this->message, $string);
-           // echo sprintf('Cannot pay using %s. Proceeding ..', $this->getCalledClass());
+            $this->message =  sprintf('Cannot pay using %s. Proceeding ..', $this->getCalledClass());
+            Message::addMessage($this->message);
             $this->successor->pay($amountToPay);
         } else {
             throw new Exception('None of the accounts have enough balance');
@@ -42,8 +42,16 @@ abstract class Account
         $this->balance = $this->balance - $money;
     }
 
-    public function getMessages(){
+    public function getMessage() {
         return $this->message;
+    }
+
+    public function getMessages() {
+        return Message::getMessages();
+    }
+
+    public function getUniqueMessages() {
+        return Message::getUniqueMessages();
     }
 
     public function getCalledClass() {

@@ -25,41 +25,57 @@ class ChangeOfResponsabilitiesTest extends TestCase
         $this->paypal->setNext($this->bitcoin);
     }
 
+    public function testBankAccountCannotPay() {
+        $this->bank->pay(259);
+        $this->assertEquals('Cannot pay using Bank. Proceeding ..', $this->bank->getMessage());
+    }
+
+    public function testPaypalAccountCannotPay() {
+        $this->bank->pay(259);
+        $this->assertEquals('Cannot pay using Paypal. Proceeding ..', $this->paypal->getMessage());
+    }
+
     public function testBankAccountCanPay() {   
         $this->bank->addMoney(200);
         $this->bank->pay(259);
-        $this->assertEquals(['Paid 259 using Bank'], $this->bank->getMessages());
-    }
-
-    public function testBankAccountCannotPay() {
-        $this->bank->pay(259);
-        $this->assertEquals('Cannot pay using Bank. Proceeding ..', $this->bank->getMessages()[0]);
+        $this->assertEquals('Paid 259 using Bank', $this->bank->getMessage());
     }
 
     public function testPaypalAccountCanPay() {
-        $this->bank->pay(259);
         $this->paypal->addMoney(100);
-        //echo implode(', ', $this->bank->getMessages());
-        $this->assertEquals(
-            ['Cannot pay using Bank. Proceeding ..', 'Paid 259 using Paypal'],
-            $this->bank->getMessages()
-        );
-        //$this->assertEquals('Paid 259 using Paypal', $this->bank->getMessages()[1]);
+        $this->bank->pay(259);
+        $this->assertEquals('Cannot pay using Bank. Proceeding ..', $this->bank->getMessage());
+        $this->assertEquals('Paid 259 using Paypal', $this->paypal->getMessage());
     }
 
-    /*public function testBitcoinAccountCanPay() {
+    public function testBitcoinAccountCanPay() {
         $this->bank->pay(259);
-        $this->assertEquals(
-            'Cannot pay using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bank. Proceeding ..',
-            'Cannot pay using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bank. Proceeding ..'
+        $this->assertEquals('Cannot pay using Bank. Proceeding ..', $this->bank->getMessage());
+        $this->assertEquals('Cannot pay using Paypal. Proceeding ..', $this->paypal->getMessage());
+        $this->assertEquals('Paid 259 using Bitcoin', $this->bitcoin->getMessage());
+    }
+
+    public function testBitcoinAccountCanPayArrayMessage() {
+        $this->bank->pay(259);
+        $this->assertArraySubset(
+            [
+                'Cannot pay using Bank. Proceeding ..',
+                'Cannot pay using Paypal. Proceeding ..',
+                'Paid 259 using Bitcoin'
+            ],
+            $this->bitcoin->getMessages()
         );
-        $this->assertEquals(
-            'Cannot pay using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Paypal. Proceeding ..',
-            'Cannot pay using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Paypal. Proceeding ..'
+    }
+
+    public function testBitcoinAccountCanPayUniqueMessage() {
+        $this->bank->pay(259);
+        $this->assertArraySubset(
+            [
+                'Cannot pay using Bank. Proceeding ..',
+                'Cannot pay using Paypal. Proceeding ..',
+                'Paid 259 using Bitcoin'
+            ],
+            $this->bitcoin->getUniqueMessages()
         );
-        $this->assertEquals(
-            'Paid 259 using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bitcoin',
-            'Paid 259 using DesignPatterns\Behavioral\ChainOfResponsibilities\PaymentExample\Bitcoin'
-        );
-    }*/
+    }
 }
