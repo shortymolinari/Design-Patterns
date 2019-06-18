@@ -7,11 +7,11 @@ class Editor
     protected $content = '';
 
     public function type(string $words) {
-        $this->content = $this->content . ' ' . $words;
+        $this->content .=  $words . ' ';
     }
 
     public function getContent() {
-        return $this->content;
+        return trim($this->content);
     }
 
     public function save() {
