@@ -2,7 +2,7 @@
 >:sparkles: ***Design Patters | Behavioral***
 ---
 ### Propósito
-El patrón de Memento consiste en capturar y almacenar el estado actual de un objeto de una manera que puede restaurarse posteriormente de manera suave.
+El patrón de Memento consiste en capturar y almacenar el estado actual de un objeto de una manera que puede restaurarse posteriormente.
 
 - Si bien la mayoría de la gente recuerda este patrón gracias al caso de uso de "deshacer", también es indispensable cuando se trata de transacciones (es decir, si necesita deshacer una operación en caso de error).
 
