@@ -59,13 +59,13 @@ ___
 
 - [x] [Chain Of Responsibilities](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Command)
 - [x] [Command](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Command)
-- Iterator
-- Mediator
-- Memento
+- [x] [Iterator](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Iterator)
+- [x] [Mediator](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Mediator)
+- [x] [Memento](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Memento)
 - [x] [Null Object](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/NullObject)
-- Observer
+- [x] [Observer](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Observer)
 - [x] [Specification](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Specification)
-- State
+- [x] [State](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/State)
 - Strategy
 - Template Method
 - [x] [Visitor](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Visitor)
@@ -76,10 +76,3 @@ ___
 - [Design patterns php](https://designpatternsphp.readthedocs.io/en/latest/README.html)
 - [Source making](https://sourcemaking.com/design_patterns/)
 - [Refactoring guru](https://refactoring.guru/design-patterns)
-
-
-
-
-
-
-
