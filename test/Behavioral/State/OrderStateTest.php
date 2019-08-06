@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Behavioral\State\Tests;
 
-use DesignPatterns\Behavioral\State\OrderContext;
+use DesignPatterns\Behavioral\State\OrderExample\OrderContext;
 use PHPUnit\Framework\TestCase;
 
 class StateTest extends TestCase
