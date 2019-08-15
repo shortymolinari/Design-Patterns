@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Behavioral\Strategy\Tests;
+namespace Test\Behavioral\Strategy;
 
 use DesignPatterns\Behavioral\Strategy\ComparatorExample\Context;
 use DesignPatterns\Behavioral\Strategy\ComparatorExample\DateComparator;
