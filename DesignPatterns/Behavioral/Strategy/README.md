@@ -12,4 +12,4 @@ El patrón ***Strategy*** sugiere que tome una clase que hace algo específico d
 
 
 #### Diagrama
-![Strategy]()
+![Strategy](https://refactoring.guru/images/patterns/diagrams/strategy/structure-2x.png)
