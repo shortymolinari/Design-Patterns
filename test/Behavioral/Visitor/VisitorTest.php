@@ -16,7 +16,7 @@ class VisitorTest extends TestCase
      */
     private $visitor;
 
-    public function setUp()
+    public function setUp():void
     {
         parent::setUp();
         $this->visitor = new RoleVisitor();

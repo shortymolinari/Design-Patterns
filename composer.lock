@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a9e28a2cf4db71b89f30c73fcd4e06d",
+    "content-hash": "d7ca9acec3ffd5979f3a7a629aa8d03f",
     "packages": [],
     "packages-dev": [
         {
@@ -60,7 +60,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2019-02-20 06:21:04"
+            "time": "2019-02-20T06:21:04+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -108,7 +108,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2018-06-11 23:09:50"
+            "time": "2018-06-11T23:09:50+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -163,7 +163,7 @@
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
-            "time": "2018-07-08 19:23:20"
+            "time": "2018-07-08T19:23:20+00:00"
         },
         {
             "name": "phar-io/version",
@@ -425,7 +425,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-12-18 15:40:51"
+            "time": "2018-12-18T15:40:51+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -488,7 +488,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-02-26 07:38:26"
+            "time": "2019-02-26T07:38:26+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -538,7 +538,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2019-02-11 12:49:18"
+            "time": "2019-02-11T12:49:18+00:00"
         },
         {
             "name": "phpunit/php-text-template",
@@ -628,7 +628,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2019-02-20 14:16:29"
+            "time": "2019-02-20T14:16:29+00:00"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -677,20 +677,20 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2019-02-11 12:50:48"
+            "time": "2019-02-11T12:50:48+00:00"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "36f92d57c2b25b778fbf72bc806e6aca0ba344b4"
+                "reference": "130104cf796a88dd1547dc5beb8bd555c2deb55e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/36f92d57c2b25b778fbf72bc806e6aca0ba344b4",
-                "reference": "36f92d57c2b25b778fbf72bc806e6aca0ba344b4",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/130104cf796a88dd1547dc5beb8bd555c2deb55e",
+                "reference": "130104cf796a88dd1547dc5beb8bd555c2deb55e",
                 "shasum": ""
             },
             "require": {
@@ -709,7 +709,7 @@
                 "phpunit/php-code-coverage": "^7.0",
                 "phpunit/php-file-iterator": "^2.0.1",
                 "phpunit/php-text-template": "^1.2.1",
-                "phpunit/php-timer": "^2.1",
+                "phpunit/php-timer": "^2.0",
                 "sebastian/comparator": "^3.0",
                 "sebastian/diff": "^3.0",
                 "sebastian/environment": "^4.1",
@@ -733,7 +733,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "8.1-dev"
+                    "dev-master": "8.0-dev"
                 }
             },
             "autoload": {
@@ -748,8 +748,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "The PHP Unit Testing framework.",
@@ -759,7 +759,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-02-22 13:07:17"
+            "time": "2019-02-01T05:41:59+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -804,7 +804,7 @@
             ],
             "description": "Looks up which function or method a line of code belongs to",
             "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
-            "time": "2019-02-11 12:48:46"
+            "time": "2019-02-11T12:48:46+00:00"
         },
         {
             "name": "sebastian/comparator",
@@ -868,7 +868,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2019-02-11 12:51:04"
+            "time": "2019-02-11T12:51:04+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -924,7 +924,7 @@
                 "unidiff",
                 "unified diff"
             ],
-            "time": "2019-02-11 12:50:35"
+            "time": "2019-02-11T12:50:35+00:00"
         },
         {
             "name": "sebastian/environment",
@@ -977,7 +977,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2019-02-11 12:51:52"
+            "time": "2019-02-11T12:51:52+00:00"
         },
         {
             "name": "sebastian/exporter",
@@ -1044,7 +1044,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2019-02-11 12:49:46"
+            "time": "2019-02-11T12:49:46+00:00"
         },
         {
             "name": "sebastian/global-state",
@@ -1098,7 +1098,7 @@
             "keywords": [
                 "global state"
             ],
-            "time": "2019-02-11 12:52:08"
+            "time": "2019-02-11T12:52:08+00:00"
         },
         {
             "name": "sebastian/object-enumerator",
@@ -1145,7 +1145,7 @@
             ],
             "description": "Traverses array structures and object graphs to enumerate all referenced objects",
             "homepage": "https://github.com/sebastianbergmann/object-enumerator/",
-            "time": "2019-02-11 12:50:05"
+            "time": "2019-02-11T12:50:05+00:00"
         },
         {
             "name": "sebastian/object-reflector",
@@ -1190,7 +1190,7 @@
             ],
             "description": "Allows reflection of object attributes, including inherited and non-public ones",
             "homepage": "https://github.com/sebastianbergmann/object-reflector/",
-            "time": "2019-02-11 12:48:12"
+            "time": "2019-02-11T12:48:12+00:00"
         },
         {
             "name": "sebastian/recursion-context",
@@ -1243,7 +1243,7 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "time": "2019-02-11 12:48:28"
+            "time": "2019-02-11T12:48:28+00:00"
         },
         {
             "name": "sebastian/resource-operations",
@@ -1285,7 +1285,7 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
-            "time": "2018-10-04 04:07:39"
+            "time": "2018-10-04T04:07:39+00:00"
         },
         {
             "name": "sebastian/version",
@@ -1386,7 +1386,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2019-02-06 07:57:58"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "theseer/tokenizer",

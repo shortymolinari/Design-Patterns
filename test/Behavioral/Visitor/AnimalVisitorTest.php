@@ -20,7 +20,7 @@ class AnimalVisitorTest extends TestCase
     public $speak;
     public $jump;
 
-    public function setUp()
+    public function setUp():void
     {
         parent::setUp();
         $this->monkey = new Monkey();

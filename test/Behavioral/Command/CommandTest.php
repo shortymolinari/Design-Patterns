@@ -13,7 +13,7 @@ class CommandTest extends TestCase
     protected $receiver;
     protected  $currentDate;
 
-    public function setUp() {
+    public function setUp():void {
         parent::setUp();
         $this->invoker = new Invoker();
         $this->receiver = new Receiver();

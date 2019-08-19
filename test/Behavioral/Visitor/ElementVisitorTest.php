@@ -17,7 +17,7 @@ class ElementVisitorTest extends TestCase
     public $total;
     public $message;
     
-    public function setUp()
+    public function setUp():void
     {
         parent::setUp();
         $this->visitedArray = new VisitedArray();

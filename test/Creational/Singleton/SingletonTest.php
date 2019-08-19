@@ -7,7 +7,7 @@ use DesignPatterns\Creational\Singleton\Singleton;
 
 class SingletonTest extends TestCase
 {
-    public function setUp()
+    public function setUp():void
     {
         parent::setUp();
         $this->firstCall = Singleton::getInstance();

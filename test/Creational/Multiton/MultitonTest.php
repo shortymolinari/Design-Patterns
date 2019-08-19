@@ -8,7 +8,7 @@ use DesignPatterns\Creational\Multiton\Multiton;
 class MultitonTest extends TestCase
 {
 
-    public function setUp()
+    public function setUp():void
     {
         parent::setUp();
         $this->firstCall = Multiton::getInstance(Multiton::INSTANCE_1);
