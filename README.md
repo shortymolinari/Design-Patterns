@@ -44,7 +44,7 @@
 - Composite
 - [x] [Data Mapper](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DataMapper)
 - Decorator
-- [x] [Dependency Injection](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DependencyInjection "Dependency Injection")
+- [x] [Dependency Injection](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DependencyInjection)
 - Facade
 - [x] [Fluent Interface](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/FluentInterface "Fluent Interface")
 - [x] [Flyweight](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Flyweight "Flyweight")
@@ -66,8 +66,8 @@ ___
 - [x] [Observer](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Observer)
 - [x] [Specification](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Specification)
 - [x] [State](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/State)
-- Strategy
-- Template Method
+- [x] [Strategy](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Strategy)
+- [x] [Template Method](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/TemplateMethod)
 - [x] [Visitor](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Behavioral/Visitor)
 
 ***Fuentes***
