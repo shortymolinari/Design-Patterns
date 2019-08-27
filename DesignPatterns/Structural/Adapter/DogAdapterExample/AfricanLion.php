@@ -6,5 +6,6 @@ class AfricanLion implements Lion
 {
     public function roar()
     {
+        return 'roar';
     }
 }

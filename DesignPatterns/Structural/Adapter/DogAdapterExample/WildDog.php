@@ -6,5 +6,6 @@ class WildDog
 {
     public function bark()
     {
+        return 'bark';
     }
 }

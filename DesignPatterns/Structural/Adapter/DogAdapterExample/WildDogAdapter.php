@@ -13,6 +13,6 @@ class WildDogAdapter implements Lion
 
     public function roar()
     {
-        $this->dog->bark();
+        return $this->dog->bark();
     }
 }
