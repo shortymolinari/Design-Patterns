@@ -39,9 +39,9 @@
 ---
 
 
-- Adapter / Wrapper
-- Bridge
-- Composite
+- [x] [Adapter / Wrapper] (https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Adapter)
+- [x] [Bridge] (https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Bridge)
+- [x] [Composite] https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Composite)
 - [x] [Data Mapper](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DataMapper)
 - Decorator
 - [x] [Dependency Injection](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DependencyInjection)
