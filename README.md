@@ -43,7 +43,7 @@
 - [x] [Bridge](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Bridge)
 - [x] [Composite](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Composite)
 - [x] [Data Mapper](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DataMapper)
-- Decorator
+- [x] [Decorator](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Docorator)
 - [x] [Dependency Injection](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DependencyInjection)
 - Facade
 - [x] [Fluent Interface](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/FluentInterface "Fluent Interface")
