@@ -45,7 +45,7 @@
 - [x] [Data Mapper](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DataMapper)
 - [x] [Decorator](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Decorator)
 - [x] [Dependency Injection](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/DependencyInjection)
-- Facade
+- [x] [Facade](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Facade)
 - [x] [Fluent Interface](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/FluentInterface "Fluent Interface")
 - [x] [Flyweight](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Flyweight "Flyweight")
 - [x] [Proxy](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Structural/Proxy "Proxy")
