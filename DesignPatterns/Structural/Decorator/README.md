@@ -11,4 +11,4 @@ Permite cambiar dinámicamente el comportamiento de un objeto en tiempo de ejecu
 
 
 #### Diagrama
-![Decorator](https://refactoring.guru/images/patterns/diagrams/composite/structure-en-2x.png)
+![Decorator](https://refactoring.guru/images/patterns/diagrams/decorator/structure-2x.png)

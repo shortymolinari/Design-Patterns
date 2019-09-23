@@ -17,4 +17,4 @@ Proporcionar una interfaz simplificada a un subsistema complejo, como una biblio
 
 
 #### Diagrama
-![Facade](https://refactoring.guru/images/patterns/diagrams/composite/structure-en-2x.png)
+![Facade](https://refactoring.guru/images/patterns/diagrams/facade/structure-2x.png)
