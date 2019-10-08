@@ -2,12 +2,12 @@
 >:sparkles: ***Design Patters | Creational***
 ---
 #### \#Propósito
-Abstract Factory permite producir familias de objetos relacionados sin especificar sus clases concretas.
+Abstract Factory permite producir familias de objetos relacionados sin especificar sus clases concretas. Por lo general, todas las clases creadas implementan la misma interfaz. Al cliente de la fábrica abstracta no le importa cómo se crean estos objetos, solo sabe cómo van juntos.
 
-- Genera una instancia para el cliente sin exponer ninguna lógica de instancia al cliente.
-- Es un objeto para crear otros objetos.
-- Puede tener múltiples Factory, con parámetros diferentes, 
+- Se especializa en crear familias de objetos relacionados
+
+
 
 #### \#Check list
 
-![Abstract Factory]()
+![Abstract Factory](https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure-2x.png)
