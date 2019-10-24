@@ -26,10 +26,11 @@ class RegistryTest extends TestCase
     }
 
     /**
-     * @expectedException \InvalidArgumentException
+     * 
      */
     public function testThrowsExceptionWhenTryingToSetInvalidKey()
     {
+        $this->expectExceptionMessage('Invalid key given');
         Registry::set('foobar', new stdClass());
     }
 
@@ -39,10 +40,11 @@ class RegistryTest extends TestCase
      * injected class may easily be replaced by a mockup
      *
      * @runInSeparateProcess
-     * @expectedException \InvalidArgumentException
+     * 
      */
     public function testThrowsExceptionWhenTryingToGetNotSetKey()
     {
+        $this->expectExceptionMessage('Invalid key given');
         Registry::get(Registry::LOGGER);
     }
 }

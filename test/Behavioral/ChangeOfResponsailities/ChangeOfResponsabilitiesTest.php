@@ -57,25 +57,11 @@ class ChangeOfResponsabilitiesTest extends TestCase
 
     public function testBitcoinAccountCanPayArrayMessage() {
         $this->bank->pay(259);
-        $this->assertArraySubset(
-            [
-                'Cannot pay using Bank. Proceeding ..',
-                'Cannot pay using Paypal. Proceeding ..',
-                'Paid 259 using Bitcoin'
-            ],
-            $this->bitcoin->getMessages()
-        );
+        $this->assertContains('Paid 259 using Bitcoin', $this->bitcoin->getMessages());
     }
 
     public function testBitcoinAccountCanPayUniqueMessage() {
         $this->bank->pay(259);
-        $this->assertArraySubset(
-            [
-                'Cannot pay using Bank. Proceeding ..',
-                'Cannot pay using Paypal. Proceeding ..',
-                'Paid 259 using Bitcoin'
-            ],
-            $this->bitcoin->getUniqueMessages()
-        );
+        $this->assertContains('Paid 259 using Bitcoin', $this->bitcoin->getUniqueMessages());
     }
 }
