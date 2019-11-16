@@ -21,13 +21,13 @@
 
 ---
 
-- [x] [Abstract Factory]()
-- [x] [Builder]()
-- [x] [Factory Method]()
+- [x] [Abstract Factory](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/AbstractFactory "Abstract Factory")
+- [x] [Builder](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Builder "Builder")
+- [x] [Factory Method](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/FactoryMethod "Factory Method")
 - [x] [Multiton](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Multiton "Multiton")
 - [x] [Pool](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Pool "Pool")
-- Prototype
-- [x] [Simple Factory]()
+- [x] [Prototype](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Prototype "Prototype")
+- [x] [Simple Factory](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/SimpleFactory "Simple Factory")
 - [x] [Singleton](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Singleton "Singleton")
 - Static Factory
 
