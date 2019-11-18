@@ -29,7 +29,7 @@
 - [x] [Prototype](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Prototype "Prototype")
 - [x] [Simple Factory](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/SimpleFactory "Simple Factory")
 - [x] [Singleton](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/Singleton "Singleton")
-- Static Factory
+- [x] [Static Factory](https://github.com/shortymolinari/Design-Patterns/tree/master/DesignPatterns/Creational/StaticFactory "Static Factory")
 
 
 ### \#Patrones de diseño estructural | Structural Design Patterns (11)
