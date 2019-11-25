@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Tests\Creational\StaticFactory;
@@ -26,7 +27,7 @@ class StaticFactoryTest extends TestCase
 
     public function testException()
     {
-        $this->expectException(\InvalidArgumentException::class);
+        $this->expectException(\AuthorizationException::class);
 
         StaticFactory::factory('object');
     }

@@ -17,11 +17,11 @@ if (StaticFactory::factory('number') instanceof FormatNumber) {
 
 if (StaticFactory::factory('string') instanceof FormatString) {
     echo "String Format" . PHP_EOL;
-} 
+}
 
 try {
     StaticFactory::factory('object');
-
 } catch (\InvalidArgumentException $e) {
+
     echo "Unknown format given";
 }
